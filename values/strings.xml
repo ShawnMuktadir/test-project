@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RideSharing</string>
+    <string name="type">Type</string>
+    <string name="rider">Rider</string>
+    <string name="driver">Driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="car">Car</string>
+    <string name="bike">Bike</string>
+</resources>

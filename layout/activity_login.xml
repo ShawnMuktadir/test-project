@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.ridesharing.MainActivity">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" User Login Form"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextLoginEmail"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Your Email"
+        android:layout_below="@+id/textView"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextLoginPassword"
+        android:layout_below="@+id/EditTextLoginEmail"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:hint="Enter Your Password"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextLoginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/TVregister"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ButtonLogin"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+
+
+
+
+
+</RelativeLayout>

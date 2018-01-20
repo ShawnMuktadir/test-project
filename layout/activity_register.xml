@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="User Registration Form"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextFullName"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Full Name"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextEmail"
+        android:layout_below="@+id/EditTextFullName"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Your Email"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextPassword"
+        android:layout_below="@+id/EditTextEmail"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Your Password"
+        android:gravity="center"/>
+    <EditText
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/EditTextMobile"
+       android:layout_below="@+id/EditTextPassword"
+       android:layout_marginTop="20dp"
+       android:inputType="textPassword"
+       android:hint="Enter Your Mobile No."
+       android:gravity="center"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextAge"
+        android:layout_below="@+id/EditTextMobile"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Your Age"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EditTextAge"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="@string/type"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkboxRider"
+        android:text="@string/rider"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkboxDriver"
+        android:text="@string/driver"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/checkboxRider"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_toEndOf="@+id/checkboxRider"
+        android:layout_toRightOf="@+id/checkboxRider" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="12dp"
+        android:text="Vehicle Type"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkboxCar"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/checkboxRider"
+        android:layout_alignStart="@+id/checkboxRider"
+        android:layout_alignTop="@+id/textView3"
+        android:text="@string/car" />
+
+    <CheckBox
+        android:id="@+id/checkboxBike"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/checkboxDriver"
+        android:layout_alignStart="@+id/checkboxDriver"
+        android:text="@string/bike" />
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="41dp"
+        android:text="Register" />
+
+</RelativeLayout>
